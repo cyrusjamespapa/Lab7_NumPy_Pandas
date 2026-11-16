@@ -1,0 +1,23 @@
+SECOM STATISTICAL ROBUSTNESS AND SENSITIVITY ANALYSIS
+Student: Papa
+Student ID: TUPM-26-1927
+Random Seed: 261927
+Selected Features: Feature_000, Feature_051, Feature_064, Feature_175, Feature_558
+Bootstrap Repetitions: 270
+Largest Change In Mean Difference: -0.0178 (Feature_051)
+Features With Changed Sign: None
+Features With Changed Ranking: None
+Reproducibility Verified: True
+
+Per-Feature Results (Fail minus Pass):
+- Feature_000: available-case -7.4211 [-23.9904, 10.5512]; imputed -7.4069 [-23.9893, 10.5600]; rank 3 -> 3
+- Feature_051: available-case 1.4688 [-12.8723, 14.8924]; imputed 1.4510 [-12.9108, 14.8684]; rank 5 -> 5
+- Feature_064: available-case 1.5273 [0.2042, 2.9069]; imputed 1.5293 [0.2063, 2.9082]; rank 1 -> 1
+- Feature_175: available-case 0.0200 [-0.0011, 0.0423]; imputed 0.0200 [-0.0011, 0.0423]; rank 2 -> 2
+- Feature_558: available-case 0.0078 [-0.0098, 0.0261]; imputed 0.0078 [-0.0098, 0.0262]; rank 4 -> 4
+
+Interpretation Notes:
+- Intervals that include zero do not show a stable group difference.
+- Raw mean differences depend on feature scale; rankings use standardized differences.
+- Median imputation can shrink or shift differences compared with available-case results.
+- Group differences do not establish failure causes.
